@@ -72,7 +72,8 @@
      <Compile Include="Assets\KinectScripts\Samples\SetSceneAvatars.cs" />
      <Compile Include="Assets\KinectScripts\Samples\SimpleGestureListener.cs" />
      <Compile Include="Assets\OverlayDemo\Scripts\KinectOverlayer.cs" />
-     <Compile Include="Assets\Scripts\script1.cs" />
+     <Compile Include="Assets\Scripts\flappyScript.cs" />
+     <Compile Include="Assets\Scripts\tubosScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Unity 5.0.0b1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
