@@ -8,6 +8,10 @@ public class tubosScript : MonoBehaviour {
 	public Vector3 distanciaEntreColumnas;
 	//La forma correcta de hacerlo ¿?
 	public SpriteRenderer formaColumna;
+
+	public GUIText puntajes;
+
+	private bool aumentaPuntaje =  true;
 	
 	void Update () {
 		//funcion que mueve los tubos
@@ -29,6 +33,16 @@ public class tubosScript : MonoBehaviour {
 			posicionTemporal.y = Random.Range (-3f, 0.6f);
 			//Movemos a los tubos a esa posicion
 			this.transform.position = posicionTemporal;
+			aumentaPuntaje =  true;
+		}
+
+		if (this.transform.position.x <= -12.8f & aumentaPuntaje== true)
+		{
+			//Le aumentamos la distan
+			int puntos = int.Parse(puntajes.text)+1;
+			Debug.Log(puntos);
+			puntajes.text = puntos.ToString();
+			aumentaPuntaje =  false;
 		}
 	}
 }
